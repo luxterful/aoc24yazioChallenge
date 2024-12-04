@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 const session = ref(
-  "53616c7465645f5f65798dda1b283908e501397b8ba524d6f763579efabca3ea91c7f5b6121dfdbf5d3d2c6fa0c3c63b619097e209ee9c84beae46bcf2a71c41"
+  ""
 );
 
 const data = ref();
@@ -127,7 +127,6 @@ async function getData() {
       
     </div>
     <div
-        
         class="w-screen h-screen bg-cover bg-[url(/background-image.jpg)] fixed top-0 left-0 -z-10"
       />
   </div>
