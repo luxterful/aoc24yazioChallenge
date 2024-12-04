@@ -106,8 +106,8 @@ async function getData() {
       <span class="block text-sm text-red-400 pt-2">{{ err }}</span>
     </div>
     <div v-else class="relative w-screen">
-      <div class="flex gap-[2px] flex-col">
-        <div v-for="row in data" class="flex gap-[2px] text-[10px]">
+      <div class="flex gap-[2px] flex-col  w-full">
+        <div v-for="row in data" class="flex gap-[2px] text-[10px] justify-center">
           <div
             class="size-3 overflow-hidden shrink-0 flex items-center justify-center"
             :class="{
