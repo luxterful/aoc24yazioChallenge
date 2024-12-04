@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const session = ref(
-  ""
-);
+const session = ref("");
 
 const data = ref();
 const count = ref(0);
@@ -83,7 +81,7 @@ async function getData() {
 </script>
 
 <template>
-  <div>
+  <div class="">
     <audio
       ref="audio"
       src="/background-music.mp3"
@@ -105,9 +103,12 @@ async function getData() {
       />
       <span class="block text-sm text-red-400 pt-2">{{ err }}</span>
     </div>
-    <div v-else class="relative w-screen">
-      <div class="flex gap-[2px] flex-col  w-full">
-        <div v-for="row in data" class="flex gap-[2px] text-[10px] justify-center">
+    <div v-else class=" w-full text-center">
+      <div class="inline-flex gap-[2px] flex-col ">
+        <div
+          v-for="row in data"
+          class="flex gap-[2px] text-[10px]"
+        >
           <div
             class="size-3 overflow-hidden shrink-0 flex items-center justify-center"
             :class="{
@@ -124,10 +125,9 @@ async function getData() {
           </div>
         </div>
       </div>
-      
     </div>
     <div
-        class="w-screen h-screen bg-cover bg-[url(/background-image.jpg)] fixed top-0 left-0 -z-10"
-      />
+      class="w-screen h-screen bg-cover bg-[url(/background-image.jpg)] fixed top-0 left-0 -z-10"
+    />
   </div>
 </template>
