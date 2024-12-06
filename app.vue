@@ -85,6 +85,7 @@ async function getData() {
     <audio
       ref="audio"
       src="/background-music.mp3"
+      type="password"
       preload
       loop
       id="audio"
