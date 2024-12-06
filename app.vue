@@ -96,7 +96,6 @@ async function getData() {
     >
       <input
         placeholder="paste your session ID of AoC and hit enter"
-        type="password"
         class="border-0 w-full text-center focus:caret-transparent focus:outline-0"
         :class="{ 'border-red-400 border-2': err }"
         v-model="session"
